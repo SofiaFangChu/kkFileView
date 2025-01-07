@@ -26,7 +26,7 @@ jobs:
         cp server/target/*.jar release/
         cp -r server/src/main/bin/* release/
         cp -r server/src/main/config/* release/
-        cp doc/*.md release/
+        cp README.md release/
         cd release && zip -r ../kkFileView-package.zip *
     
     - name: Upload Artifacts
